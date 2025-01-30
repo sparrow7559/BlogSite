@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viraj's Blog Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Blog Journal</h1>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="create.html" class="new-blog">New Blog</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <!-- Blog Details Container -->
+    <div id="blog-details" class="blog-details">
+      
+      <!-- <h2 id="blog-title">THE BLOGS</h2>
+      <p id="blog-author">John</p>
+      <div id="blog-body">Making blogs is cool?</div>
+      <button id="edit-btn">Edit</button>
+      <button id="delete-btn">Delete</button> -->
+
+    </div>
+
+    <!-- Edit Form Container (hidden by default) -->
+    <div id="edit-form-container" style="display: none;">
+      <h2>Edit Blog</h2>
+      <form id="edit-blog-form">
+        <label>Blog title:</label>
+        <input type="text" id="edit-title" required>
+        <label>Blog body:</label>
+        <textarea id="edit-body" required></textarea>
+        <!-- <label>Blog author:</label>
+        <input type="text" id="edit-author" required> -->
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <!-- <script type="module" src="app.js"></script> -->
+</body>
+</html>
