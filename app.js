@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //   }
 // });
 
-  if (path === "/BlogSite/index.html" || path === "/BlogSite") {
+  if (path === "/BlogSite/index.html" || path === "/BlogSite/") {
     loadHomePage();
   } else if (path === "/BlogSite/create.html") {
     loadCreatePage();
