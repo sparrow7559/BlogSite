@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 //   }
 // });
 
-  if (path === "/index.html" || path === "/") {
+  if (path === "/BlogSite/index.html" || path === "/BlogSite") {
     loadHomePage();
-  } else if (path === "/create.html") {
+  } else if (path === "/BlogSite/create.html") {
     loadCreatePage();
-  } else if (path === "/show.html") {
+  } else if (path === "/BlogSite/show.html") {
     loadShowPage();
   }
 });
@@ -124,7 +124,7 @@ function loadCreatePage() {
       author,
     });
 
-    window.location.href = "/index.html";
+    window.location.href = "/BlogSite/index.html";
   });
 }
 
@@ -134,7 +134,7 @@ function loadShowPage() {
   const id = urlParams.get("id");
 
   if (!id) {
-    window.location.href = "/index.html"; // Redirect if no ID is provided
+    window.location.href = "/BlogSite/index.html"; // Redirect if no ID is provided
     return;
   }
 
@@ -209,7 +209,7 @@ function loadShowPage() {
     // Handle delete button click
     document.getElementById("delete-btn").addEventListener("click", async () => {
       await db.collection("blogs").doc(id).delete();
-      window.location.href = "/index.html";
+      window.location.href = "/BlogSite/index.html";
     });
   };
 
