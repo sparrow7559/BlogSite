@@ -70,7 +70,7 @@ function loadHomePage() {
         // blogList.appendChild(blogPreview);
         const blogLink = document.createElement("a");
         // blogLink.href = `/workshop-blog/show.html?id=${doc.id}`;
-        blogLink.href = `/show.html?id=${doc.id}`; // Update: Link to the blog's details page
+        blogLink.href = `/BlogSite/show.html?id=${doc.id}`; // Update: Link to the blog's details page
         blogLink.style.textDecoration = "none"; // Update: Remove underline from the link
         blogLink.style.color = "inherit"; // Update: Inherit text color
 
